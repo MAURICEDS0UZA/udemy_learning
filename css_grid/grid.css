@@ -16,6 +16,9 @@ body {
 
 .parent {
   padding: 20px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 20px;
 }
 
 .item {
@@ -27,6 +30,9 @@ body {
 
 .item:nth-child(1) {
   font-size: 1.1rem;
+  grid-row: span 2;
+  display: grid;
+  align-content: center;
 }
 
 .item p {
@@ -34,45 +40,45 @@ body {
 }
 
 .example-banner {
-  max-width: 900px;
-  height: 300px;
-  background-color: rgb(222, 222, 255);
-  margin: 0 auto 20px auto;
+    max-width: 900px;
+    height: 300px;
+    background-color: rgb(222, 222, 255);
+    margin: 0 auto 20px auto;
 }
 
 .center-me {
-  color: rgb(113, 113, 175);
-  font-size: 3rem;
-}
-
-.full-width-example {
-  background-color: rgb(255, 211, 130);
-  color: rgb(112, 86, 38);
-  line-height: 1.7;
-  padding: 20px;
-}
-
-.photo-example {
-  max-width: 700px;
-  margin: 20px auto;
-}
-
-.photo-example img {
-  max-width: 100%;
-  display: block;
-}
-
-.overlay-text {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.308);
-  padding: 20px;
-  font-size: 0.85rem;
-  line-height: 1.7;
-}
-
-.overlay-text p {
-  margin: 0;
-}
+    color: rgb(113, 113, 175);
+    font-size: 3rem;
+  }
+  
+  .full-width-example {
+    background-color: rgb(255, 211, 130);
+    color: rgb(112, 86, 38);
+    line-height: 1.7;
+    padding: 20px;
+  }
+  
+  .photo-example {
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  
+  .photo-example img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .overlay-text {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 20px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+  
+  .overlay-text p {
+    margin: 0;
+  }
 
 .layout {
   
