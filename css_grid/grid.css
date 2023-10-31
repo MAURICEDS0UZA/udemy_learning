@@ -70,35 +70,34 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-  max-width: 700px;
-  margin: 20px auto;
-  
-}
-
-.photo-example img {
-  max-width: 100%;
-  display: block;
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.overlay-text {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.308);
-  padding: 20px;
-  font-size: 0.85rem;
-  line-height: 1.7;
-  grid-column: 1;
-  grid-row: 1;
-  align-self: self-end;
-}
-  .overlay-text p {
-    margin: 0;
+    max-width: 700px;
+    margin: 20px auto;
   }
 
-.layout {
-  
-}
+  .photo-example img {
+    max-width: 100%;
+    display: block;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .overlay-text {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 20px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: self-end;
+  }
+    .overlay-text p {
+      margin: 0;
+    }
+
+  .layout {
+    
+  }
 
 .header {
   background-color: rgb(113, 113, 175);
