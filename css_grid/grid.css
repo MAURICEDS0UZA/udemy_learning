@@ -60,28 +60,38 @@ body {
     color: rgb(112, 86, 38);
     line-height: 1.7;
     padding: 20px;
-    grid-template-columns: minmax(auto,960px);
+    grid-template-columns: minmax(auto,900px);
     font-size: larger;
+    justify-content: center;
+    display: grid;
   }
-  
+
   .photo-example {
-    max-width: 700px;
-    margin: 20px auto;
-  }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  max-width: 700px;
+  margin: 20px auto;
   
-  .photo-example img {
-    max-width: 100%;
-    display: block;
-  }
-  
-  .overlay-text {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.308);
-    padding: 20px;
-    font-size: 0.85rem;
-    line-height: 1.7;
-  }
-  
+}
+
+.photo-example img {
+  max-width: 100%;
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.overlay-text {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.308);
+  padding: 20px;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: self-end;
+}
   .overlay-text p {
     margin: 0;
   }
