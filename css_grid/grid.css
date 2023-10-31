@@ -94,15 +94,22 @@ body {
     .overlay-text p {
       margin: 0;
     }
-
-  .layout {
-    
+@media screen  and (min-width:800px){
+  
+    .layout {
+      display :grid;
+      grid-template-columns: 1fr 2.5fr;
+      grid-template-areas: 
+      "header header"
+      "side main"
+      "side foot";
+    }
   }
-
 .header {
   background-color: rgb(113, 113, 175);
   color: #fff;
   padding: 20px;
+  grid-area:  header;
 }
 
 .sidebar {
@@ -110,11 +117,15 @@ body {
   font-size: 0.8rem;
   color: #999;
   padding: 20px;
+  grid-area:  side;
 }
 
 .main {
   padding: 20px;
   line-height: 1.7;
+  grid-area:  main;
+  align-self: self-start;
+
 }
 
 .footer {
@@ -122,6 +133,9 @@ body {
   color: #fff;
   padding: 15px;
   font-size: 0.75rem;
+  grid-area: foot; 
+  align-self: self-end;
+
 }
 
 .responsive-example {
