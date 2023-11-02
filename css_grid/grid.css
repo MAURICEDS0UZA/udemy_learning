@@ -141,6 +141,10 @@ body {
 .responsive-example {
   max-width: 1100px;
   margin: 20px auto;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
 .responsive-item {
