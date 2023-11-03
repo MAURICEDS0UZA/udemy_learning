@@ -23,6 +23,7 @@ p {
 img {
   max-width: 100%;
   height: auto;
+ 
 }
 
 a {
@@ -101,10 +102,13 @@ header p {
   color: #fff;
   padding: 10px 20px;
   background-color: #365267;
+  transition-property: color background-color;
+  transition-duration: 3s;
 }
 
 .site-nav a:hover {
-  background-color: #2c465a;
+  background-color:#FFF;
+  color: #2c465a;
 }
 
 @media screen and (max-width: 1023px) {
@@ -177,12 +181,55 @@ header p {
   border: 2px solid #d3dee7;
   margin-bottom: 30px;
   color: #0f0f0f;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 5px;
+  animation: first 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+ 
+.boxes :nth-child(2) .box-a {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+.boxes :nth-child(3) .box-a {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+.boxes :nth-child(4) .box-a {
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+
+@keyframes first {
+  0%{
+    opacity: 0;
+    transform:translateY(-200%);
+  }
+  30%{
+    opacity: 0.3;
+    transform:translateY(0%);
+  }
+  60%{
+    opacity: 0.6;
+    transform:translateY(-3%);
+  }
+  80%{
+    opacity: 0.8;
+    transform:translateY(-10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform:translateY(0%);
+  }
 }
 
 @media screen and (max-width: 767px) {
   .box-a {
-    margin-bottom: 15px;
-   
+    margin-bottom: 15px;   
   }
 }
 
@@ -359,7 +406,6 @@ header p {
     margin-bottom: 15px;
   }
 }
-
 footer {
   text-align: center;
   font-size: 85%;
