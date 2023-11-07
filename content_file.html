@@ -8,6 +8,7 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+<script src="http://learnwebcode.github.io/declarativeToggle/js/jquery.declarativeToggle.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <title>Udemy | exp</title>
 </head>
@@ -18,7 +19,7 @@
   <div class="container">
     <h1>Website Title</h1>
     <p class="hide-small">Website slogan included here.</p>
-
+    <span data-toggle-target=".site-nav" class="toggle-btn">menu</span>
     <nav class="site-nav">
       <ul class="group">
         <li><a href="#">Home</a></li>
@@ -84,12 +85,12 @@
 
         </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Bees are winged insects closely related to wasps and ants, known for their roles in pollination and, in the case of the best-known bee species, the western honey bee, for producing honey. Bees are a monophyletic lineage within the superfamily Apoidea. They are currently considered a clade, called Anthophila. There are over 20,000 known species of bees in seven recognized biological families.[1][2][3] Some species – including honey bees, bumblebees, and stingless bees – live socially in colonies while most species (>90%) – including mason bees, carpenter bees, leafcutter bees, and sweat bees – are solitary.<span data-toggle-target=".full-text" data-toggle-text='Hide the full text' class="toggle-btn read-more">Read more full text ...</span></p>
+        <div class="full-text">
+          <h2>Full Text</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+      <p>Bees are found on every continent except Antarctica, in every habitat on the planet that contains insect-pollinated flowering plants. The most common bees in the Northern Hemisphere are the Halictidae, or sweat bees, but they are small and often mistaken for wasps or flies. Bees range in size from tiny stingless bee species, whose workers are less than 2 millimetres (0.08 in) long,[4] to Megachile pluto, the largest species of leafcutter bee, whose females can attain a length of 39 millimetres (1.54 in).</p>
+    </div>
       </div>
       <!-- /col -->
 
@@ -100,9 +101,10 @@
           ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
+          
         <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
           amet, consectetur adipisicing elit, sed do eiusmod.</p>
+        
       </div>
       <!-- /col -->
 

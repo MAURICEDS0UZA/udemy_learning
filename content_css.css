@@ -593,6 +593,31 @@ html.cssanimations .box-a {
     margin-bottom: 15px;
   }
 }
+/* reveal & hide text */
+.read-more{
+  text-decoration: underline;
+  color :blue;
+}
+.read-more :hover {
+  text-decoration:none;
+}
+.toggle-btn{
+  display:none;
+}
+ @media screen and (max-width:767px){
+.toggle-btn-visible{
+  display:block;
+}
+
+.toggle-target-hidden{
+  display:none;
+}
+
+.toggle-target-expanded{
+  display:block;
+}
+ }
+
 
 footer {
   text-align: center;
