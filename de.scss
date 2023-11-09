@@ -1,0 +1,12 @@
+$primary-color:#fff;
+@mixin vertical-grad($val_1,$val_2){
+    background-image: linear-gradient(to bottom,$val_1,$val_2);
+}
+
+.body{
+    background-color: $primary-color;
+    p{
+   @include vertical-grad(green,yellow);
+    }
+   
+}
